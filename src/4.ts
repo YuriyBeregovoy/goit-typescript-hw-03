@@ -47,6 +47,9 @@ abstract class House {
 
 
 class MyHouse extends House { 
+   constructor(key: Key) {
+    super(true, key);
+  }
 
 
 
