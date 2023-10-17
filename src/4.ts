@@ -1,3 +1,21 @@
+class Key {
+  private signature: number;
+
+  constructor() {
+    this.signature = Math.random();
+  }
+
+  getSignature(): number {
+    return this.signature;
+  }
+}
+
+
+
+
+
+
+
 const key = new Key();
 
 const house = new MyHouse(key);
