@@ -22,8 +22,18 @@ class Person {
   }
 }
 
+abstract class House {
 
 
+ }
+
+
+class MyHouse extends House { 
+
+
+
+  
+}
 
 
 const key = new Key();
