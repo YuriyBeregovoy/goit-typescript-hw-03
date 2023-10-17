@@ -24,6 +24,15 @@ class Person {
 
 abstract class House {
 
+  protected door: boolean;
+  protected key: Key;
+  protected tenants: Person[] = [];
+
+  constructor(door: boolean, key: Key) {
+    this.door = door;
+    this.key = key;
+    
+  }
 
  }
 
@@ -32,7 +41,7 @@ class MyHouse extends House {
 
 
 
-  
+
 }
 
 
