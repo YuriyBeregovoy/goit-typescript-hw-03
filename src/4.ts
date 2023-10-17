@@ -31,9 +31,18 @@ abstract class House {
   constructor(door: boolean, key: Key) {
     this.door = door;
     this.key = key;
-    
+
+  }
+  comeIn(person: Person): void {
+    if (this.door) {
+      this.tenants.push(person);
+      console.log(`Welcome, ${person.getKey().getSignature()}!`);
+    } else {
+      console.log('The door is closed. You cannot enter.');
+    }
   }
 
+  abstract openDoor(key: Key): void;
  }
 
 
